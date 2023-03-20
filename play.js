@@ -7,6 +7,7 @@ const connect = function() {
     port: 50541 // PORT number here,
   });
 
+// handle incoming data and console.log it
   conn.on("data", (data) => {
     console.log("Server says: ", data);
   });
