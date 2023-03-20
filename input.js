@@ -38,11 +38,26 @@ const setupInput = (conn) => {
     }
   };
 
+  const positive = function(key) {
+    if (key === "p") {
+      conn.write("Say: Great! Keep going!");
+    }
+  };
+
+  const negative = function(key) {
+    if (key === "n") {
+      conn.write("Say: Aww.. Do better..");
+    }
+  };
+
+
   stdin.on("data", handleUserInput);
   stdin.on("data", up);
   stdin.on("data", down);
   stdin.on("data", left);
   stdin.on("data", right);
+  stdin.on("data", negative);
+  stdin.on("data", positive);
 
   return stdin;
 };
