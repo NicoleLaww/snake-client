@@ -8,8 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-![What the game should look like](/assets/images/snakeScreenshot.png)
-
+![What the game should look like](/assets/images/snakeScreenshot.jpg)
 
 ## Getting Started
 
